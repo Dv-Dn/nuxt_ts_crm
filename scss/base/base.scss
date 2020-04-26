@@ -1,0 +1,35 @@
+html {
+  font-family: 'Nunito';
+  color: $black;
+}
+.page-title {
+  display: flex;
+  -webkit-align-items: center;
+          align-items: center;
+  -ms-flex-align: center;
+  -ms-flex-pack: justify;
+  -webkit-justify-content: space-between;
+          justify-content: space-between;
+  padding-bottom: 1rem;
+  border-bottom: solid 1px $grey;
+}
+.layout {
+  display: grid;
+  overflow: hidden;
+  min-height: 100vh;
+
+  grid: 56px auto / 300px 1fr;
+  grid-template-areas: 'header header'
+  'sidebar content';
+}
+.content {
+  padding: 12px;
+
+  grid-area: content;
+}
+.h2 {
+  font-size: 40px;
+}
+.h3 {
+  font-size: 33px;
+}

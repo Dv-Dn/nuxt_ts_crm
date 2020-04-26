@@ -1,0 +1,10 @@
+.categories-block {
+  display: grid;
+  margin-top: 45px;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 25px;
+  &__item {
+    display: grid;
+    row-gap: 25px;
+  }
+}

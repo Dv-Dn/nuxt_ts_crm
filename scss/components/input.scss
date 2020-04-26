@@ -1,0 +1,11 @@
+.textInput {
+  padding: 12px 3px;
+  border-bottom: 1px solid $grey;
+  display: flex;
+  min-width: 300px;
+  text-align: left;
+}
+.textInput__field {
+  border: 0;
+  width: 100%;
+}

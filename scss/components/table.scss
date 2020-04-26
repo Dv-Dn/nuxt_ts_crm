@@ -1,0 +1,44 @@
+.table {
+  overflow: hidden;
+  box-sizing: border-box;
+  width: 100%;
+  text-align: center;
+  color: #969696;
+  border: 1px solid #ccc;
+
+  &__title {
+    font-size: 18px;
+    margin-bottom: 13px;
+    text-align: left;
+    color: #000;
+  }
+  &__head-row {
+    height: 34px;
+    color: #fff;
+    background-color: $secondary;
+  }
+  &__tr {
+    &:last-child {
+      .table__td {
+        border: 1px solid #ccc;
+        border-radius: 8px;
+      }
+    }
+  }
+  &:not(:nth-child(2)) td {
+    border-top: 1px solid #ccc;
+  }
+  &__th,
+  &__td {
+    padding: 10px 0;
+    font-size: 12px;
+    font-weight: normal;
+    font-style: normal;
+  }
+  &__td {
+    min-width: 50px;
+  }
+  &__td:not(:last-child) {
+    border-right: 1px solid #ccc;
+  }
+}
